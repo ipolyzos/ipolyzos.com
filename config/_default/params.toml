@@ -1,0 +1,65 @@
+colorScheme = "slate"
+darkToggle = false
+defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = false
+
+enableSearch = false
+enableCodeCopy = false
+
+[header]
+  layout = "hamburger" # valid options: basic, hamburger, custom
+
+[footer]
+  showAppearanceSwitcher = false
+  showCopyright = true
+  showThemeAttribution = false
+  showScrollToTop = true
+
+[homepage]
+  layout = "profile" # valid options: page, profile, custom
+  showRecent = false
+
+[article]
+  showDate = false
+  showDateUpdated = false
+  showAuthor = false
+  showBreadcrumbs = false
+  showDraftLabel = false
+  showEdit = false
+  editURL = "https://github.com/ipolyzos/ipolyzos.com"
+  editAppendPath = false
+  showHeadingAnchors = false
+  showPagination = false
+  invertPagination = false
+  showReadingTime = false
+  showTableOfContents = false
+  showTaxonomies = false
+  showWordCount = false
+  showComments = false
+  # sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
+
+[list]
+  showBreadcrumbs = true
+  showSummary = true
+  showTableOfContents = false
+  groupByYear = true 
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = false 
+
+[fathomAnalytics]
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
+
+[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""
+
+[minify]
+  disableXML = true
+  minifyOutput = true

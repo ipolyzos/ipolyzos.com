@@ -1,0 +1,22 @@
+baseURL = "https://ipolyzos.com"
+
+defaultContentLanguage = "en"
+languageName = "English"
+isoCode = "en"
+
+enableRobotsTXT = true
+paginate = 15
+summaryLength = 0
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[permalinks]
+posts = "/blog/:year/:month/:day/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe= true
+

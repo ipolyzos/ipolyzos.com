@@ -1,0 +1,33 @@
+languageCode = "en"
+languageName = "English"
+displayName = "EN"
+isoCode = "en"
+weight = 1
+rtl = false
+
+# title = "Ioannis Polyzos"
+# logo = "logo.jpg"
+description = "Personal website of Ioannis Polyzos"
+copyright = "© Ioannis Polyzos. All rights reseved."
+
+dateFormat = "2 January 2006"
+
+[author]
+  name = "Ioannis Polyzos"
+  image = "img/profile.jpg"
+  headline = "Senior Solutions Architect @ AWS"
+  bio = "Senior Solutions Architect and Software Engineer"
+  links = [
+    { email = "mailto:i.polyzos@gmail.com" },
+    { github = "https://github.com/ipolyzos" },
+    { keybase = "https://keybase.io/ipolyzos" },
+    { linkedin = "https://linkedin.com/in/ipolyzos" },
+    { twitter = "https://twitter.com/ipolyzos" },
+    { facebook = "https://facebook.com/iopolyzos" },
+    { google-scholar = "https://scholar.google.com/citations?user=uhS-v_MAAAAJ"},
+    { calendar = "https://cal.com/ipolyzos" }
+  ]
+
+[share-links-active]
+  twitter = true
+  linkedin = true
