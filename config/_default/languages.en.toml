@@ -15,7 +15,7 @@ dateFormat = "2 January 2006"
 [author]
   name = "Ioannis Polyzos"
   image = "img/profile.jpg"
-  headline = "Senior Solutions Architect @ AWS"
+  headline = "Senior Solutions Architect"
   bio = "Senior Solutions Architect and Software Engineer"
   links = [
     { email = "mailto:i.polyzos@gmail.com" },
