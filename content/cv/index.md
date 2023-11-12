@@ -5,6 +5,7 @@ sharingLinks = false
 +++
 
 ### 2022 - Current
+- Senior Solutions Architect at [ATCOM](https://atcom.gr)
 - Senior Solutions Architect at [Amazon Web Serices (AWS)](https://aws.amazon.com)
 
 ### 2019 - 2021
