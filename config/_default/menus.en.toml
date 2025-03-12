@@ -1,20 +1,20 @@
 [[main]]
-  name = "home"
-  pageRef = "/"
-  weight = 1
+name = "home"
+pageRef = "/"
+weight = 1
 [[main]]
-  name = "about"
-  pageRef = "about"
-  weight = 10
+name = "about"
+pageRef = "about"
+weight = 10
 [[main]]
-  name = "cv"
-  pageRef = "cv"
-  weight = 20
+name = "cv"
+url = "https://linkedin.com/in/ipolyzos"
+weight = 20
 [[main]]
-  name = "projects"
-  pageRef = "projects"
-  weight = 30
+name = "projects"
+pageRef = "projects"
+weight = 30
 [[main]]
-  name = "publications"
-  pageRef = "publications"
-  weight = 40
+name = "publications"
+pageRef = "publications"
+weight = 40
