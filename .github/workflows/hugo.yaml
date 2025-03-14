@@ -19,6 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          submodules: recursive
           fetch-depth: 0
 
       - name: Set up Hugo
@@ -30,6 +31,7 @@ jobs:
       - name: Clean and Build
         run: |
           rm -rf public
+          rm -rf resources
           hugo --gc --minify --cleanDestinationDir
 
       - name: Upload artifacts
@@ -63,3 +65,10 @@ jobs:
           external_repository: ipolyzos/ipolyzos.com
           publish_dir: ./public
           force_orphan: true
+          commit_message: "deploy: ${{ github.sha }}"
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          full_commit_message: |
+            Deploy: ${{ github.sha }}
+            Triggered by: ${{ github.event_name }}
+            Branch: ${{ github.ref }}
