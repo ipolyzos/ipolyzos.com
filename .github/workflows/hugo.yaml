@@ -2,8 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -14,11 +13,14 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -27,8 +29,9 @@ jobs:
           hugo-version: "0.111.3"
           extended: true
 
-      - name: Build
+      - name: Clean and Build
         run: |
+          git clean -fdx
           rm -rf public resources .hugo_build.lock
           hugo --gc --minify --cleanDestinationDir --ignoreCache \
           --baseURL "https://ipolyzos.com/"
@@ -40,4 +43,6 @@ jobs:
           publish_dir: ./public
           force_orphan: true
           cname: ipolyzos.com
-          commit_message: "deploy: ${{ github.sha }}"
+          commit_message: "deploy: ${{ github.sha }} [skip ci]"
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
