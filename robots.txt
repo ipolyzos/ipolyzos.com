@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ipolyzos.com/sitemap.xml
