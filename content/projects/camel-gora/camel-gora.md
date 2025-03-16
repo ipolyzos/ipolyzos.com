@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: "camelgora"
-title: camel-gora 
+title: camel-gora
 icon: camel-gora
-date: 2014-12-14
-weight: 20141214
+date: 2013-11-18
+weight: 20131118
 tags: [component, gora, apache, camel, integration]
 showDate: true
 showReadingTime: true
