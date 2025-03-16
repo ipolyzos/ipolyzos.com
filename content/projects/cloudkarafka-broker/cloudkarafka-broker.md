@@ -3,8 +3,8 @@ layout: page
 permalink: "cloudkarafkabroker"
 title: cloudkarafka-broker
 icon: cloudkarafka-broker
-date: 2014-08-07
-weight: 20140807
+date: 2014-07-08
+weight: 20140708
 tags: [component, kafka, apache, cloudfoundry, integration, cloudkarafka. broker]
 showDate: true
 showReadingTime: true
