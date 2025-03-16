@@ -3,8 +3,8 @@ layout: page
 permalink: "camelkafka"
 title: camel-kafka
 icon: camel-kafka
-date: 2014-07-07
-weight: 20140707
+date: 2014-08-07
+weight: 20140807
 description: >
 tags: [component, kafka, apache, camel, integration]
 showDate: true
