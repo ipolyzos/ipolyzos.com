@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: "camelhazelcast"
-title: camel-hazelcast 
+title: camel-hazelcast
 icon: camel-hazelcast
-date: 2013-09-09
-weight: 20130909
+date: 2011-01-27
+weight: 20110127
 tags: [component, hazelcast, data-grid, apache-camel]
 showDate: true
 showReadingTime: true
