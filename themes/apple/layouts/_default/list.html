@@ -4,7 +4,7 @@
     <h1 class="section__title">{{ .Title }}</h1>
     <div class="cards">
       {{- range .Pages.ByWeight.Reverse -}}
-      <a class="card{{ if .Params.private }} card--private{{ end }}" href="{{ .Permalink }}">
+      <a class="card{{ if .Params.private }} card--private{{ end }}" href="{{ .Permalink }}" aria-label="{{ .Title }}">
         {{- if .Params.private -}}
         <div class="card__private-badge">
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
