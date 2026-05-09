@@ -11,5 +11,6 @@
     { twitter        = "https://twitter.com/ipolyzos" },
     { facebook       = "https://facebook.com/iopolyzos" },
     { google-scholar = "https://scholar.google.com/citations?user=uhS-v_MAAAAJ" },
-    { calendar       = "https://cal.com/ipolyzos" }
+    { calendar       = "https://cal.com/ipolyzos" },
+    { bluesky        = "https://bsky.app/profile/ipolyzos.com" }
   ]
