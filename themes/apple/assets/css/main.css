@@ -405,6 +405,7 @@ a   { color: var(--accent); transition: color .15s var(--ease); }
   align-items: center; color: var(--muted);
 }
 .article__meta time { font-variant-numeric: tabular-nums; }
+.reading-time { font-size: 12px; color: var(--muted); }
 .article__hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
 
 
@@ -494,8 +495,48 @@ a   { color: var(--accent); transition: color .15s var(--ease); }
 /* ═══════════════════════════════════════
    10. Responsive
 ═══════════════════════════════════════ */
+/* Hamburger button — hidden on desktop */
+.nav__hamburger {
+  display: none;
+  width: 32px; height: 32px;
+  align-items: center; justify-content: center;
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text2);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+.nav__hamburger .icon-close { display: none; }
+.nav--open .nav__hamburger .icon-menu  { display: none; }
+.nav--open .nav__hamburger .icon-close { display: block; }
+
+/* Mobile nav drawer */
+.nav__drawer {
+  display: none;
+  padding: 12px 20px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+.nav__drawer ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.nav__drawer a {
+  display: block;
+  padding: 10px 14px;
+  font-size: 16px; font-weight: 500;
+  color: var(--text2);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background .15s, color .15s;
+}
+.nav__drawer a:hover { background: var(--bg2); color: var(--text); }
+.nav__drawer a[aria-current] { background: rgba(0,113,227,.08); color: var(--accent); }
+[data-theme="dark"] .nav__drawer a[aria-current] { background: rgba(41,151,255,.12); }
+.nav--open .nav__drawer { display: block; }
+
 @media (max-width: 734px) {
-  .nav__links { display: none; }
+  .nav__links    { display: none; }
+  .nav__hamburger { display: flex; }
 
   .hero { padding: 72px 20px 64px; }
   .hero__wrap {
@@ -861,3 +902,38 @@ a   { color: var(--accent); transition: color .15s var(--ease); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
 }
+
+/* ═══════════════════════════════════════
+   Skip-to-content link
+═══════════════════════════════════════ */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--accent);
+  color: #fff;
+  padding: .5rem 1.25rem;
+  border-radius: 0 0 10px 10px;
+  font-size: .875rem;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 9999;
+  transition: top .15s var(--ease);
+}
+.skip-link:focus-visible { top: 0; outline: none; }
+
+/* ═══════════════════════════════════════
+   Focus-visible styles (keyboard nav)
+═══════════════════════════════════════ */
+*:focus                { outline: none; }
+*:focus-visible        { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+/* Override border-radius per component */
+.nav__links a:focus-visible   { border-radius: 8px; }
+.socials__link:focus-visible  { border-radius: 980px; }
+.theme-toggle:focus-visible   { border-radius: 50%; outline-offset: 2px; }
+.card:focus-visible           { border-radius: var(--r); outline-offset: 0; }
+.article__back:focus-visible  { border-radius: 8px; }
+.pub-link:focus-visible       { border-radius: 6px; }
+.github-link:focus-visible    { border-radius: 6px; }
+.nav__hamburger:focus-visible { border-radius: 8px; outline-offset: 2px; }
