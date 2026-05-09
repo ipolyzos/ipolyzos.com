@@ -11,8 +11,8 @@
   "jobTitle": "{{ $a.headline }}",
   "description": "{{ $a.bio }}",
   "image": "{{ .Site.BaseURL }}img/profile.jpg",
-  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Glasgow Caledonian University" },
-  "knowsAbout": ["Distributed Systems", "Cloud Computing", "Kubernetes", "Solutions Architecture", "Java", "Go", "Python"],
+  {{- with .Site.Params.site.alumniOf }}"alumniOf": { "@type": "CollegeOrUniversity", "name": "{{ . }}" },{{ end }}
+  "knowsAbout": [{{ range $i, $v := .Site.Params.site.knowsAbout }}{{ if $i }},{{ end }}"{{ $v }}"{{ end }}],
   "sameAs": [{{ range $i, $v := $links }}{{ if $i }},{{ end }}"{{ $v }}"{{ end }}]
 }
 </script>

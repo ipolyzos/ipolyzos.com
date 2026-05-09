@@ -1,3 +1,8 @@
+[site]
+  alumniOf   = "Glasgow Caledonian University"
+  scholarUrl = "https://scholar.google.com/citations?user=uhS-v_MAAAAJ"
+  knowsAbout = ["Distributed Systems", "Cloud Computing", "Kubernetes", "Solutions Architecture", "Java", "Go", "Python"]
+
 [author]
   name     = "Ioannis Polyzos"
   image    = "img/profile.jpg"
