@@ -1,0 +1,20 @@
+<footer class="footer">
+  <div class="footer__wrap">
+    <p class="footer__copy">
+      {{- with .Site.Params.copyright -}}
+        {{- . | safeHTML -}}
+      {{- else -}}
+        &copy; {{ now.Year }} {{ .Site.Params.author.name | default .Site.Title }}. All rights reserved.
+      {{- end -}}
+    </p>
+    <ul class="footer__nav" role="list">
+      {{- range .Site.Menus.main -}}
+      <li>
+        <a href="{{ .URL }}"{{ if not .Page }} target="_blank" rel="noopener noreferrer"{{ end }}>
+          {{- .Name -}}
+        </a>
+      </li>
+      {{- end -}}
+    </ul>
+  </div>
+</footer>

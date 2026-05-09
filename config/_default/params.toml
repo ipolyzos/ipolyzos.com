@@ -1,65 +1,15 @@
-colorScheme = "slate"
-darkToggle = false
-defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = false
-
-enableSearch = false
-enableCodeCopy = false
-
-[header]
-  layout = "hamburger" # valid options: basic, hamburger, custom
-
-[footer]
-  showAppearanceSwitcher = false
-  showCopyright = true
-  showThemeAttribution = false
-  showScrollToTop = true
-
-[homepage]
-  layout = "profile" # valid options: page, profile, custom
-  showRecent = false
-
-[article]
-  showDate = false
-  showDateUpdated = false
-  showAuthor = false
-  showBreadcrumbs = false
-  showDraftLabel = false
-  showEdit = false
-  editURL = "https://github.com/ipolyzos/ipolyzos.com"
-  editAppendPath = false
-  showHeadingAnchors = false
-  showPagination = false
-  invertPagination = false
-  showReadingTime = false
-  showTableOfContents = false
-  showTaxonomies = false
-  showWordCount = false
-  showComments = false
-  # sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
-
-[list]
-  showBreadcrumbs = true
-  showSummary = true
-  showTableOfContents = false
-  groupByYear = true 
-
-[sitemap]
-  excludedKinds = ["taxonomy", "term"]
-
-[taxonomy]
-  showTermCount = false 
-
-[fathomAnalytics]
-  # site = "ABC12345"
-  # domain = "llama.yoursite.com"
-
-[verification]
-  # google = ""
-  # bing = ""
-  # pinterest = ""
-  # yandex = ""
-
-[minify]
-  disableXML = true
-  minifyOutput = true
+[author]
+  name     = "Ioannis Polyzos"
+  image    = "img/profile.jpg"
+  headline = "Senior Solutions Architect"
+  bio      = "Senior Solutions Architect and Software Engineer"
+  links    = [
+    { email          = "mailto:me@ipolyzos.com" },
+    { github         = "https://github.com/ipolyzos" },
+    { keybase        = "https://keybase.io/ipolyzos" },
+    { linkedin       = "https://linkedin.com/in/ipolyzos" },
+    { twitter        = "https://twitter.com/ipolyzos" },
+    { facebook       = "https://facebook.com/iopolyzos" },
+    { google-scholar = "https://scholar.google.com/citations?user=uhS-v_MAAAAJ" },
+    { calendar       = "https://cal.com/ipolyzos" }
+  ]

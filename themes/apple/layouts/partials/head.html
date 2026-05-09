@@ -1,0 +1,61 @@
+<meta charset="utf-8" />
+<script>
+(function(){
+  var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  document.documentElement.setAttribute('data-theme',t);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+{{- $title := cond .IsHome .Site.Title (printf "%s · %s" .Title .Site.Title) -}}
+{{- $desc  := cond (ne .Description "") .Description (.Site.Params.description | default "") -}}
+{{- $url   := .Permalink -}}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}" />
+{{- with .Site.Params.author.name }}<meta name="author" content="{{ . }}" />{{ end }}
+<link rel="canonical" href="{{ $url }}" />
+
+{{/* ── Open Graph ── */}}
+<meta property="og:type"        content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:url"         content="{{ $url }}" />
+<meta property="og:site_name"   content="{{ .Site.Title }}" />
+<meta property="og:title"       content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:locale"      content="{{ .Site.Language.LanguageCode | default "en" }}" />
+{{- $ogImg := resources.Get "img/profile.jpg" -}}
+{{- if $ogImg -}}
+{{- $ogImg = $ogImg.Fill "600x600 Center" -}}
+<meta property="og:image"        content="{{ $ogImg.Permalink }}" />
+<meta property="og:image:width"  content="600" />
+<meta property="og:image:height" content="600" />
+{{- end }}
+
+{{/* ── Twitter Card ── */}}
+<meta name="twitter:card"        content="summary" />
+<meta name="twitter:title"       content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+{{- range .Site.Params.author.links -}}
+  {{- range $key, $url := . -}}
+    {{- if eq $key "twitter" -}}
+<meta name="twitter:site" content="@{{ replaceRE `https?://(www\.)?twitter\.com/` `` $url }}" />
+    {{- end -}}
+  {{- end -}}
+{{- end }}
+
+{{/* ── rel="me" identity links ── */}}
+{{- range .Site.Params.author.links -}}
+  {{- range $key, $url := . -}}
+<link rel="me" href="{{ $url }}" />
+  {{- end -}}
+{{- end }}
+
+{{/* ── Assets ── */}}
+{{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+{{- range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" />
+{{- end }}

@@ -1,0 +1,128 @@
+{{ define "head-schema" }}
+{{- with .Params.publication -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Publications by {{ $.Site.Params.author.name }}",
+  "itemListElement": [
+    {{- range $i, $p := . -}}{{ if $i }},{{ end }}
+    {
+      "@type": "ScholarlyArticle",
+      "position": {{ add $i 1 }},
+      "name": "{{ $p.title }}",
+      "author": [{{ range $j, $a := $p.authors }}{{ if $j }},{{ end }}{"@type":"Person","name":"{{ $a }}"}{{ end }}],
+      "datePublished": "{{ $p.year }}",
+      "isPartOf": { "@type": "{{ if eq $p.type "conference" }}Event{{ else }}Periodical{{ end }}", "name": "{{ $p.venue }}" }
+      {{- with $p.doi }}, "identifier": {"@type":"PropertyValue","propertyID":"doi","value":"{{ . }}"}, "url": "https://doi.org/{{ . }}"{{ end }}
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+{{ end }}
+
+{{ define "main" }}
+<div class="article">
+  <div class="article__wrap">
+
+    <header>
+      <h1 class="article__title">{{ .Title }}</h1>
+      {{- if .Params.publication -}}
+      <div class="article__meta">
+        <a class="pub-scholar-profile"
+           href="https://scholar.google.com/citations?user=uhS-v_MAAAAJ"
+           target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+          Google Scholar profile
+        </a>
+      </div>
+      {{- end -}}
+    </header>
+    <hr class="article__hr" />
+
+    {{- with .Content -}}
+    <div class="prose{{ if $.Params.publication }} pub-intro{{ end }}">{{ . }}</div>
+    {{- end -}}
+
+    {{- with .Params.publication -}}
+    <div class="pub-list">
+      {{- range . -}}
+      <article class="pub-card">
+
+        <div class="pub-card__meta">
+          <span class="pub-badge pub-badge--{{ .type }}">
+            {{- if eq .type "conference" }}Conference Paper{{- else }}Journal Article{{- end -}}
+          </span>
+          {{- with .publisher -}}
+          <span class="pub-publisher">{{ . }}</span>
+          {{- end -}}
+          <span class="pub-year">{{ .year }}</span>
+        </div>
+
+        <h3 class="pub-title">{{ .title }}</h3>
+
+        <p class="pub-authors">
+          {{- range $i, $a := .authors -}}
+            {{- if $i }}, {{ end -}}
+            {{- if eq $a "I. Polyzos" }}<strong>{{ $a }}</strong>{{- else }}{{ $a }}{{- end -}}
+          {{- end -}}
+        </p>
+
+        <p class="pub-venue">
+          <em>{{ .venue }}</em>
+          {{- with .volume }}&thinsp;&middot;&thinsp;Vol.&nbsp;{{ . }}{{- end -}}
+          {{- with .pages }}&thinsp;&middot;&thinsp;pp.&nbsp;{{ . }}{{- end -}}
+          {{- with .month }}&thinsp;&middot;&thinsp;{{ . }}{{- end -}}
+          {{- with .location }}&thinsp;&middot;&thinsp;{{ . }}{{- end -}}
+        </p>
+
+        <div class="pub-links">
+          {{- with .doi -}}
+          <a class="pub-link pub-link--doi" href="https://doi.org/{{ . }}"
+             target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            DOI
+          </a>
+          {{- end -}}
+          {{- with .scholar_url -}}
+          <a class="pub-link pub-link--scholar" href="{{ . }}"
+             target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            Scholar
+          </a>
+          {{- end -}}
+          {{- with .semantic_url -}}
+          <a class="pub-link pub-link--semantic" href="{{ . }}"
+             target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4M12 16h.01"/>
+            </svg>
+            Semantic Scholar
+          </a>
+          {{- end -}}
+        </div>
+
+      </article>
+      {{- end -}}
+    </div>
+    {{- end -}}
+
+  </div>
+</div>
+{{ end }}

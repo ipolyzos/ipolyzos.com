@@ -1,0 +1,56 @@
+{{ define "head-schema" }}
+{{- $a := .Site.Params.author -}}
+{{- $links := slice -}}
+{{- range $a.links -}}{{- range $k, $v := . -}}{{- if ne $k "email" -}}{{- $links = $links | append $v -}}{{- end -}}{{- end -}}{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ $a.name }}",
+  "url": "{{ .Site.BaseURL }}",
+  "jobTitle": "{{ $a.headline }}",
+  "description": "{{ $a.bio }}",
+  "image": "{{ .Site.BaseURL }}img/profile.jpg",
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Glasgow Caledonian University" },
+  "knowsAbout": ["Distributed Systems", "Cloud Computing", "Kubernetes", "Solutions Architecture", "Java", "Go", "Python"],
+  "sameAs": [{{ range $i, $v := $links }}{{ if $i }},{{ end }}"{{ $v }}"{{ end }}]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+{{- $a := .Site.Params.author -}}
+<section class="hero">
+  <div class="hero__wrap">
+    <div class="hero__copy">
+      {{- with $a.headline -}}
+      <p class="hero__kicker">{{ . }}</p>
+      {{- end -}}
+      <h1 class="hero__name">{{ $a.name | default .Site.Title }}</h1>
+      {{- with $a.bio -}}
+      <p class="hero__tagline">{{ . }}</p>
+      {{- end -}}
+      {{- with .Content -}}
+      <div class="hero__bio">{{ . }}</div>
+      {{- end -}}
+      {{ partial "social-links.html" . }}
+    </div>
+
+    {{- with $a.image -}}
+    {{- $img := resources.Get . -}}
+    {{- if $img -}}
+    {{- $img = $img.Fill "416x416 Center" -}}
+    <div class="hero__photo">
+      <div class="hero__photo-ring">
+        <img class="hero__img"
+             src="{{ $img.RelPermalink }}"
+             alt="{{ $a.name }}"
+             width="208" height="208"
+             loading="eager" />
+      </div>
+    </div>
+    {{- end -}}
+    {{- end -}}
+  </div>
+</section>
+{{ end }}

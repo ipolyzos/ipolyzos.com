@@ -1,0 +1,4 @@
+name        = "Apple"
+description = "Apple.com-inspired clean personal portfolio theme"
+license     = "MIT"
+min_version = "0.111.0"
