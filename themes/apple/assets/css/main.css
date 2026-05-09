@@ -293,6 +293,18 @@ a   { color: var(--accent); transition: color .15s var(--ease); }
 }
 
 
+.section__disclaimer {
+  display: flex; align-items: flex-start; gap: 7px;
+  margin-bottom: 36px;
+  font-size: 12px; line-height: 1.6;
+  color: var(--muted);
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg2);
+}
+.section__disclaimer svg { flex-shrink: 0; margin-top: 1px; opacity: .7; }
+
 /* ═══════════════════════════════════════
    6. Project cards
 ═══════════════════════════════════════ */

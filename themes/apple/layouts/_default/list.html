@@ -2,6 +2,13 @@
 <section class="section section--alt">
   <div class="section__wrap">
     <h1 class="section__title">{{ .Title }}</h1>
+    <p class="section__disclaimer">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      These are personal projects reflecting individual interests and do not represent, affiliate with, or reflect the views of any current, past, or future employer.
+    </p>
     <div class="cards">
       {{- range .Pages.ByWeight.Reverse -}}
       <a class="card{{ if .Params.private }} card--private{{ end }}" href="{{ .Permalink }}" aria-label="{{ .Title }}">
