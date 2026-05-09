@@ -2,6 +2,7 @@
 layout: page
 permalink: "cloudkarafkabroker"
 title: cloudkarafka-broker
+description: "Cloud Foundry service broker for provisioning and managing CloudKarafka-hosted Apache Kafka instances as on-demand platform services."
 icon: cloudkarafka-broker
 date: 2014-07-08
 weight: 20140708

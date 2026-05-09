@@ -2,6 +2,7 @@
 layout: page
 permalink: "vagrantkube"
 title: vagrant-kube
+description: "Single-node Kubernetes cluster provisioner using kubeadm and Vagrant for local development and testing."
 icon: vagrant-kube
 date: 2019-02-17
 weight: 20190217

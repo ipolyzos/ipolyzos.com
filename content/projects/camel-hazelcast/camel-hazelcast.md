@@ -2,6 +2,7 @@
 layout: page
 permalink: "camelhazelcast"
 title: camel-hazelcast
+description: "Apache Camel component for Hazelcast distributed data-grid integration, enabling asynchronous SEDA patterns over a distributed work-queue."
 icon: camel-hazelcast
 date: 2011-01-27
 weight: 20110127

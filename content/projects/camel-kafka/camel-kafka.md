@@ -5,7 +5,7 @@ title: camel-kafka
 icon: camel-kafka
 date: 2014-08-07
 weight: 20140807
-description: >
+description: "Apache Camel component for Apache Kafka message-oriented middleware, enabling high-performance event-driven integrations within Camel routes."
 tags: [component, kafka, apache, camel, integration]
 showDate: true
 showReadingTime: true

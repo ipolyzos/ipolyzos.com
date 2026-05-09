@@ -2,6 +2,7 @@
 layout: page
 permalink: "camelgora"
 title: camel-gora
+description: "Apache Camel component providing seamless integration with Apache Gora, enabling NoSQL database access directly within Camel routes."
 icon: camel-gora
 date: 2013-11-18
 weight: 20131118

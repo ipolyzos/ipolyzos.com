@@ -2,6 +2,7 @@
 layout: page
 permalink: "nulldaddyddns"
 title: nulldaddy-ddns
+description: "Lightweight dynamic DNS updater combining the ipify public-IP API and GoDaddy DNS API to keep domain records current automatically."
 icon: nulldaddy-ddns
 date: 2016-10-30
 weight: 20161030

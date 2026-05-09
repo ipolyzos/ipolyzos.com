@@ -2,6 +2,7 @@
 layout: page
 permalink: "vagranetes"
 title: vagranetes
+description: "Multi-node Kubernetes cluster provisioner using kubeadm within Vagrant virtual machines for local development and testing."
 icon: vagranetes
 date: 2019-02-17
 weight: 20190217

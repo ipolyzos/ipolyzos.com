@@ -2,6 +2,7 @@
 layout: page
 permalink: "terraformazurermacs"
 title: terraform-azurerm-acs
+description: "Terraform module for deploying and configuring Azure Container Service with support for Kubernetes, DC/OS, and Swarm orchestrators."
 icon: terraform-azurerm-acs
 date: 2017-11-04
 weight: 20171104

@@ -2,6 +2,7 @@
 layout: page
 permalink: "ansiblespiff"
 title: ansible-spiff
+description: "Binary Ansible module integrating Spiff, the BOSH and CloudFoundry deployment manifest builder, directly into Ansible playbooks."
 icon: ansible-spiff
 date: 2017-01-25
 weight: 20170125

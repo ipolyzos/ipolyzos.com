@@ -2,6 +2,7 @@
 layout: page
 permalink: "vagrantk3s"
 title: vagrant-k3s
+description: "Single-node k3s lightweight Kubernetes cluster provisioner using Vagrant for rapid local development on any platform."
 icon: vagrant-k3s
 date: 2019-03-19
 weight: 20190319
