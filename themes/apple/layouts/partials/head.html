@@ -6,6 +6,8 @@
 })();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
 
 {{- $title := cond .IsHome .Site.Title (printf "%s · %s" .Title .Site.Title) -}}
 {{- $desc  := cond (ne .Description "") .Description (.Site.Params.description | default "") -}}
@@ -36,6 +38,7 @@
 <meta name="twitter:card"        content="summary" />
 <meta name="twitter:title"       content="{{ $title }}" />
 <meta name="twitter:description" content="{{ $desc }}" />
+{{- if $ogImg }}<meta name="twitter:image" content="{{ $ogImg.Permalink }}" />{{ end }}
 {{- range .Site.Params.author.links -}}
   {{- range $key, $url := . -}}
     {{- if eq $key "twitter" -}}

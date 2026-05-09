@@ -1,3 +1,5 @@
+description = "Personal site of Ioannis Polyzos — Senior Solutions Architect, software engineer, and distributed systems practitioner."
+
 [site]
   alumniOf   = "Glasgow Caledonian University"
   scholarUrl = "https://scholar.google.com/citations?user=uhS-v_MAAAAJ"
