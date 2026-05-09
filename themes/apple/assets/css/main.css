@@ -111,13 +111,9 @@ a   { color: var(--accent); transition: color .15s var(--ease); }
 .nav__brand:hover { opacity: .8; }
 .nav__brand-icon {
   display: flex; align-items: center; justify-content: center;
-  width: 26px; height: 26px; flex-shrink: 0;
-  border-radius: 7px;
-  background: linear-gradient(135deg, var(--accent), var(--purple));
-  color: #fff;
-  box-shadow: 0 1px 4px rgba(0,113,227,.25);
+  flex-shrink: 0;
+  color: var(--accent);
 }
-[data-theme="dark"] .nav__brand-icon { box-shadow: 0 1px 6px rgba(41,151,255,.35); }
 
 /* Nav links */
 .nav__links { display: flex; gap: 2px; list-style: none; }
