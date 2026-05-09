@@ -8,9 +8,9 @@
     { github         = "https://github.com/ipolyzos" },
     { keybase        = "https://keybase.io/ipolyzos" },
     { linkedin       = "https://linkedin.com/in/ipolyzos" },
+    { bluesky        = "https://bsky.app/profile/ipolyzos.com" },
     { twitter        = "https://twitter.com/ipolyzos" },
     { facebook       = "https://facebook.com/iopolyzos" },
     { google-scholar = "https://scholar.google.com/citations?user=uhS-v_MAAAAJ" },
-    { calendar       = "https://cal.com/ipolyzos" },
-    { bluesky        = "https://bsky.app/profile/ipolyzos.com" }
+    { calendar       = "https://cal.com/ipolyzos" }
   ]
