@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/mongodb-atlas-broker"
 permalink: "mongodbatlasbroker"
 title: mongodb-atlas-broker
 icon: mongodb-atlas-broker

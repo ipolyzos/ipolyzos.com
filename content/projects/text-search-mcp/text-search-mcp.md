@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: text-search-mcp
 description: "MCP stdio server delivering read-only, schema-versioned ripgrep/grep text search over allowlisted filesystem roots."
 date: 2025-04-04

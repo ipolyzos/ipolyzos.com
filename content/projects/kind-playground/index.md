@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/kind-playground"
 title: kind-playground
 description: "Local Kubernetes experimentation environment built on KinD (Kubernetes in Docker) for rapid prototyping and idea exploration."
 date: 2023-10-31

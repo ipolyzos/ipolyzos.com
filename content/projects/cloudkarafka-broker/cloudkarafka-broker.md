@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/cloudkarafka-broker"
 permalink: "cloudkarafkabroker"
 title: cloudkarafka-broker
 description: "Cloud Foundry service broker for provisioning and managing CloudKarafka-hosted Apache Kafka instances as on-demand platform services."

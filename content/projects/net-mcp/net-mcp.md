@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: net-mcp
 description: "Read-only MCP server exposing structured, deterministic views of host network state via ss and lsof parsing."
 date: 2025-03-31

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: file-meta-mcp
 description: "Read-only MCP server for file metadata, disk usage, filesystem usage, and SHA-256 hashing via stdio transport."
 date: 2025-04-02

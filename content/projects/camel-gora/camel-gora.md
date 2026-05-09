@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/camel-gora"
 permalink: "camelgora"
 title: camel-gora
 description: "Apache Camel component providing seamless integration with Apache Gora, enabling NoSQL database access directly within Camel routes."

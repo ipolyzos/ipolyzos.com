@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: file-discovery-mcp
 description: "stdio MCP server wrapping find(1) in a safe, structured, read-only way for AI agent filesystem discovery."
 date: 2025-04-03

@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/camel-hazelcast"
 permalink: "camelhazelcast"
 title: camel-hazelcast
 description: "Apache Camel component for Hazelcast distributed data-grid integration, enabling asynchronous SEDA patterns over a distributed work-queue."

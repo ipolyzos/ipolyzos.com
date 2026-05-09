@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: archive-mcp
 description: "stdio MCP server wrapping tar, unzip, and zipinfo for safe, structured, read-only archive inspection by AI agents."
 date: 2025-04-01

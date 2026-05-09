@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: git-read-mcp
 description: "stdio MCP server wrapping Git in a safe, structured, read-only way for AI agent repository inspection."
 date: 2025-05-08

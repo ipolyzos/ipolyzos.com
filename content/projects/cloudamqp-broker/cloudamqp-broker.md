@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/cloudamqp-broker"
 permalink: "cloudampqkabroker"
 title: cloudamqp-broker
 description: "Cloud Foundry service broker for provisioning and managing CloudAMQP-hosted RabbitMQ instances as on-demand platform services."

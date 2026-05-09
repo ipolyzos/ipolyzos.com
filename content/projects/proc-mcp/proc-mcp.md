@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: proc-mcp
 description: "stdio MCP server for read-only Unix process inspection via ps and optional pstree."
 date: 2025-03-29

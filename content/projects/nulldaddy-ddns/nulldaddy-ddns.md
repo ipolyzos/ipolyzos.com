@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/nulldaddy-ddns"
 permalink: "nulldaddyddns"
 title: nulldaddy-ddns
 description: "Lightweight dynamic DNS updater combining the ipify public-IP API and GoDaddy DNS API to keep domain records current automatically."

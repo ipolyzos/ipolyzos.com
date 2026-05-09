@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/terraform-azurerm-acs"
 permalink: "terraformazurermacs"
 title: terraform-azurerm-acs
 description: "Terraform module for deploying and configuring Azure Container Service with support for Kubernetes, DC/OS, and Swarm orchestrators."

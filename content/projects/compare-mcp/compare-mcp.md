@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: compare-mcp
 description: "stdio MCP server over diff(1) delivering structured JSON unified diffs and parsed hunks to AI agents."
 date: 2025-04-06

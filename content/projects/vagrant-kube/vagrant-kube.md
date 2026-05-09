@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/vagrant-kube"
 permalink: "vagrantkube"
 title: vagrant-kube
 description: "Single-node Kubernetes cluster provisioner using kubeadm and Vagrant for local development and testing."

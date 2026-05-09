@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/ansible-spiff"
 permalink: "ansiblespiff"
 title: ansible-spiff
 description: "Binary Ansible module integrating Spiff, the BOSH and CloudFoundry deployment manifest builder, directly into Ansible playbooks."

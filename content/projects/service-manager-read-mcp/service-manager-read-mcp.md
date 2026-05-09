@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: service-manager-read-mcp
 description: "stdio MCP server providing a safe, structured, read-only interface over host service managers for AI agents on Linux and macOS."
 date: 2025-05-07

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: log-mcp
 description: "MCP server for read-only log analysis and structured inspection on Unix-flavoured systems."
 date: 2025-03-30

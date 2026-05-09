@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/null-box/acs-engine-kubernetes-osba-installer"
 title: acs-engine-kubernetes-osba-installer
 description: "Installer for Open Service Broker for Azure (OSBA) on ACS-Engine Kubernetes deployments, enabling on-demand provisioning of Azure services."
 date: 2019-06-01

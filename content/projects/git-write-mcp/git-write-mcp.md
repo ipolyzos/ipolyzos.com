@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: git-write-mcp
 description: "stdio MCP server exposing allowlisted Git write operations and optional GitHub REST endpoints to AI coding agents on Linux and macOS."
 date: 2025-05-09

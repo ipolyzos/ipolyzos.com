@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/vagranetes"
 permalink: "vagranetes"
 title: vagranetes
 description: "Multi-node Kubernetes cluster provisioner using kubeadm within Vagrant virtual machines for local development and testing."

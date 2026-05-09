@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: json-query-mcp
 description: "stdio MCP server wrapping jq in a safe, structured, read-only way for AI agent JSON querying."
 date: 2025-04-05

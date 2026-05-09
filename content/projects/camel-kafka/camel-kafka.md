@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/camel-kafka"
 permalink: "camelkafka"
 title: camel-kafka
 icon: camel-kafka

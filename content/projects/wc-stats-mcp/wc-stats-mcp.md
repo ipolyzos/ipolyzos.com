@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: wc-stats-mcp
 description: "stdio MCP server wrapping wc(1) in a safe, structured, read-only way for line, word, and byte counts."
 date: 2025-03-28

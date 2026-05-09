@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+github_url: "https://github.com/ipolyzos/elephantsql-broker"
 permalink: "elephantsqlbroker"
 title: elephantsql-broker
 description: "Cloud Foundry service broker for provisioning and managing ElephantSQL-hosted PostgreSQL databases as on-demand platform services."
