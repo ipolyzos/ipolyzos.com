@@ -1,20 +1,16 @@
 [[main]]
-name = "home"
-pageRef = "/"
-weight = 1
-[[main]]
-name = "about"
+name = "About"
 pageRef = "about"
 weight = 10
 [[main]]
-name = "cv"
+name = "CV"
 url = "https://linkedin.com/in/ipolyzos"
 weight = 20
 [[main]]
-name = "projects"
+name = "Projects"
 pageRef = "projects"
 weight = 30
 [[main]]
-name = "publications"
+name = "Publications"
 pageRef = "publications"
 weight = 40

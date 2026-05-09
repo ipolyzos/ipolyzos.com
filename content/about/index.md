@@ -5,15 +5,15 @@ sharingLinks = false
 
 [[stat]]
   value = "5+"
-  label = "Solutions Architecture"
+  label = "Years · Solutions Architecture"
 
 [[stat]]
   value = "15+"
-  label = "Software Engineering"
+  label = "Years · Software Engineering"
 
 [[stat]]
   value = "5"
-  label = "Industries"
+  label = "Industries Served"
 
 [skills]
   languages = ["Java", "Go", "Python", "Bash"]
