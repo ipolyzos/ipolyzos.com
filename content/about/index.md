@@ -2,15 +2,55 @@
 title = "About"
 layout = "simple"
 sharingLinks = false
+
+[[stat]]
+  value = "5+"
+  label = "Solutions Architecture"
+
+[[stat]]
+  value = "15+"
+  label = "Software Engineering"
+
+[[stat]]
+  value = "5"
+  label = "Industries"
+
+[skills]
+  languages = ["Java", "Go", "Python", "Bash"]
+  platforms = ["Kubernetes", "Mesos", "CloudFoundry"]
+  cloud     = ["AWS", "GCP", "Azure", "CloudStack", "OpenStack"]
+
+[[industry]]
+  name = "Government"
+
+[[industry]]
+  name = "EU"
+
+[[industry]]
+  name = "Health"
+
+[[industry]]
+  name = "Travel"
+
+[[industry]]
+  name = "Finance"
+
+[[motivation]]
+  icon  = "puzzle"
+  label = "Problem Solver"
+  text  = "I love the complex and unpredictable challenges that arise from working as part of a team, pair or mob. Bringing together the people factor and technology is what keeps my mind active and raring to go."
+
+[[motivation]]
+  icon  = "group"
+  label = "Customer Centric"
+  text  = "I believe the client is at the centre of every solution. Each requirement brings a new challenge to balance trade-offs and apply technologies creatively towards the most valuable outcome."
+
+[[motivation]]
+  icon  = "target"
+  label = "Results Driven"
+  text  = "I like to achieve concrete goals, knowing I have applied the optimal strategy for accomplishing them. I thrive working toward such goals collaboratively and sharing knowledge along the way."
 +++
 
-I am a hands-on professional with 5+ years of experience in [Solutions Arcitecture](https://en.wikipedia.org/wiki/Solution_architecture) and 15+ years of experience in [Software Engineering](https://en.wikipedia.org/wiki/Software_engineering) and [Distributed Systems](https://en.wikipedia.org/wiki/Distributed_computing). I see computer science not only as a profession but as a hobby. I am experienced in engineering highly distributed dynamic and [cloud computing](https://en.wikipedia.org/wiki/Cloud_computing) systems, in leadership roles focused on implementing optimal ways of working and shipping solutions to interesting problems. I thrive in challenging projects with emerging  technologies, striving to stay ahead of the latest technological advancements. In my free time I try to stay active in the community and contribute to open source projects and the academia.
+I am a hands-on professional with experience in [Solutions Architecture](https://en.wikipedia.org/wiki/Solution_architecture), [Software Engineering](https://en.wikipedia.org/wiki/Software_engineering), and [Distributed Systems](https://en.wikipedia.org/wiki/Distributed_computing). I see computer science not only as a profession but as a hobby — I thrive in challenging projects with emerging technologies, in leadership roles focused on implementing optimal ways of working and shipping solutions to interesting problems.
 
-I have expert knowledge of programming languages such as [Java](https://www.java.com), [Go](https://go.dev/), [Python](https://www.python.org/), [Bash](https://www.gnu.org/software/bash/) etc. 
-
-I am experienced in highly dynamic cloud native systems and platforms such as [Kubernetes](https://kubernetes.io/), [Mesos](https://mesos.apache.org/) and [CloudFoundry](https://www.cloudfoundry.org/) based on public _(e.g [AWS](https://aws.amazon.com/)*, [GCP](https://cloud.google.com/), [Azure](https://azure.microsoft.com))_, private _(e.g [CloudStack](https://cloudstack.apache.org/), [Openstack](https://www.openstack.org/))_ and/or hybrid infrastructures. My experience spans a breadth of industries such as _Government_, _EU_, _Health_, _Traveling_ and _Finance_ in challenging projects ranging from local to international deployments and user bases with up to tens of thousands of users.
-
-## What motivates me ?
--	Motivated by the passion to solve problems, I tend to describe a love for technology. I especially like the sometimes complex and unpredictable challenges that arise from working as part of a team, pair or mob. Bringing together the people factor and technology is what keeps my mind active and raring to go. 
--	Customer and user centric, I believe the client is at the centre of every solution. I believe that each client requirement brings with it a new challenge to balance trade-offs, and utilise technologies creatively towards the most valuable solution - problem solving at its finest. 
-- I am driven by results. I like to achieve a concrete goal, knowing I have applied the optimal strategy for accomplishing it. I tend to thrive on working toward such goals in a collaborative environment and sharing knowledge along the way.
+My experience spans a breadth of industries in projects ranging from local to international deployments, with user bases of up to tens of thousands. In my free time I stay active in the community, contributing to open source and academia.
