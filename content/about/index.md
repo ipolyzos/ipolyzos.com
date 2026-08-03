@@ -8,7 +8,7 @@ sharingLinks = false
   label = "Years · Solutions Architecture"
 
 [[stat]]
-  value = "15+"
+  value = "20+"
   label = "Years · Software Engineering"
 
 [[stat]]
@@ -16,7 +16,7 @@ sharingLinks = false
   label = "Industries Served"
 
 [skills]
-  languages = ["Java", "Go", "Python", "Bash"]
+  languages = ["Java", "Go", "Python", "Bash", "Rust"]
   platforms = ["Kubernetes", "Mesos", "CloudFoundry"]
   cloud     = ["AWS", "GCP", "Azure", "CloudStack", "OpenStack"]
 
