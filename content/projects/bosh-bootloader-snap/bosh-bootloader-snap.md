@@ -3,8 +3,8 @@ layout: single
 github_url: "https://github.com/ipolyzos/bosh-bootloader-snap"
 title: bosh-bootloader-snap
 description: "Snap package for the BOSH Bootloader CLI enabling one-command installation on any Snapcraft-compatible Linux distribution."
-date: 2019-04-01
-weight: 20190401
+date: 2018-09-26
+weight: 20180926
 tags: [bosh, cloudfoundry, snap, cli, linux]
 showDate: true
 showReadingTime: true
