@@ -2,8 +2,8 @@
 layout: single
 title: log-mcp
 description: "MCP server for read-only log analysis and structured inspection on Unix-flavoured systems."
-date: 2025-03-30
-weight: 20250330
+date: 2026-04-02
+weight: 20260402
 tags: ["go", "mcp", "logging", "unix", "golang"]
 private: false
 showDate: true
