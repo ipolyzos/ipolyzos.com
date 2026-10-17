@@ -2,8 +2,8 @@
 layout: single
 title: service-manager-read-mcp
 description: "stdio MCP server providing a safe, structured, read-only interface over host service managers for AI agents on Linux and macOS."
-date: 2025-05-07
-weight: 20250507
+date: 2026-04-04
+weight: 20260404
 tags: ["go", "mcp", "systemd", "linux", "macos"]
 private: false
 showDate: true
