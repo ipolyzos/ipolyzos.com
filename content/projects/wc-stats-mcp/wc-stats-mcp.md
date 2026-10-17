@@ -2,8 +2,8 @@
 layout: single
 title: wc-stats-mcp
 description: "stdio MCP server wrapping wc(1) in a safe, structured, read-only way for line, word, and byte counts."
-date: 2025-03-28
-weight: 20250328
+date: 2026-03-30
+weight: 20260330
 tags: ["go", "mcp", "wc", "golang"]
 private: false
 showDate: true
