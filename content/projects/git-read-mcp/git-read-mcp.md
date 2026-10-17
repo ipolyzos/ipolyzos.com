@@ -2,8 +2,8 @@
 layout: single
 title: git-read-mcp
 description: "stdio MCP server wrapping Git in a safe, structured, read-only way for AI agent repository inspection."
-date: 2025-05-08
-weight: 20250508
+date: 2026-03-30
+weight: 20260330
 tags: ["go", "mcp", "git", "golang"]
 private: false
 showDate: true
