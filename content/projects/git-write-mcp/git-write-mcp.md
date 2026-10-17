@@ -5,7 +5,7 @@ description: "stdio MCP server exposing allowlisted Git write operations and opt
 date: 2025-05-09
 weight: 20250509
 tags: ["go", "mcp", "git", "ai-agents", "devops", "automation"]
-private: true
+private: false
 showDate: true
 showReadingTime: false
 ---
