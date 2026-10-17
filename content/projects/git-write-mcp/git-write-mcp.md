@@ -2,8 +2,8 @@
 layout: single
 title: git-write-mcp
 description: "stdio MCP server exposing allowlisted Git write operations and optional GitHub REST endpoints to AI coding agents on Linux and macOS."
-date: 2025-05-09
-weight: 20250509
+date: 2026-04-18
+weight: 20260418
 tags: ["go", "mcp", "git", "ai-agents", "devops", "automation"]
 private: false
 showDate: true
