@@ -5,8 +5,8 @@ permalink: "cloudamqpbroker"
 title: cloudamqp-broker
 description: "Cloud Foundry service broker for provisioning and managing CloudAMQP-hosted RabbitMQ instances as on-demand platform services."
 icon: cloudamqp-broker
-date: 2017-06-25
-weight: 20170625
+date: 2017-09-07
+weight: 20170907
 tags: [component, amqp, rabbitmq, cloudfoundry, integration, cloudamqp]
 showDate: true
 showReadingTime: true

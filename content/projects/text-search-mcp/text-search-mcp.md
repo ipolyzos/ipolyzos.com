@@ -2,8 +2,8 @@
 layout: single
 title: text-search-mcp
 description: "MCP stdio server delivering read-only, schema-versioned ripgrep/grep text search over allowlisted filesystem roots."
-date: 2025-04-04
-weight: 20250404
+date: 2026-03-28
+weight: 20260328
 tags: ["typescript", "mcp", "ripgrep", "grep", "search"]
 private: false
 showDate: true

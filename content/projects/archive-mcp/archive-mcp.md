@@ -2,8 +2,8 @@
 layout: single
 title: archive-mcp
 description: "stdio MCP server wrapping tar, unzip, and zipinfo for safe, structured, read-only archive inspection by AI agents."
-date: 2025-04-01
-weight: 20250401
+date: 2026-03-31
+weight: 20260331
 tags: ["go", "mcp", "archive", "golang"]
 private: false
 showDate: true

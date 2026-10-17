@@ -2,8 +2,8 @@
 layout: single
 title: ariadne
 description: "Durable, containerized software engineering workflow platform with specialized agents, verification gates, and persistent execution state."
-date: 2026-10-17
-weight: 20261017
+date: 2026-08-29
+weight: 20260829
 tags: ["python", "agents", "orchestration", "software-engineering"]
 private: true
 showDate: true

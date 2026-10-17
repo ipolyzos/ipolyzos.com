@@ -3,8 +3,8 @@ layout: single
 github_url: "https://github.com/null-box/docker-image-transfer-helper"
 title: docker-image-transfer-helper
 description: "CLI helper (DIT) for transferring Docker images between container registries without requiring a local Docker daemon."
-date: 2020-11-16
-weight: 20201116
+date: 2020-03-30
+weight: 20200330
 tags: ["docker", "containers", "registry", "cli", "devops", "automation"]
 showDate: true
 showReadingTime: false

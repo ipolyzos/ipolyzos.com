@@ -3,8 +3,8 @@ layout: single
 github_url: "https://github.com/ipolyzos/azure-cloudshell-setup"
 title: azure-cloudshell-setup
 description: "Shell scripts to automate the setup and configuration of the Azure Cloud Shell environment for Kubernetes and cloud-native workflows."
-date: 2021-11-11
-weight: 20211110
+date: 2019-12-11
+weight: 20191211
 tags: ["azure", "cloudshell", "kubernetes", "shell", "automation", "devops"]
 showDate: true
 showReadingTime: false

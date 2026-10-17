@@ -4,8 +4,8 @@ github_url: "https://github.com/ipolyzos/camel-kafka"
 permalink: "camelkafka"
 title: camel-kafka
 icon: camel-kafka
-date: 2014-08-07
-weight: 20140807
+date: 2014-03-06
+weight: 20140306
 description: "Apache Camel component for Apache Kafka message-oriented middleware, enabling high-performance event-driven integrations within Camel routes."
 tags: [component, kafka, apache, camel, integration]
 showDate: true

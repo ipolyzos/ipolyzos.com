@@ -2,8 +2,8 @@
 layout: single
 title: compare-mcp
 description: "stdio MCP server over diff(1) delivering structured JSON unified diffs and parsed hunks to AI agents."
-date: 2025-04-06
-weight: 20250406
+date: 2026-03-29
+weight: 20260329
 tags: ["go", "mcp", "diff", "golang"]
 private: false
 showDate: true

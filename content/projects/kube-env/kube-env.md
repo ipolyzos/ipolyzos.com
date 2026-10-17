@@ -3,8 +3,8 @@ layout: single
 github_url: "https://github.com/ipolyzos/kube-env"
 title: kube-env
 description: "direnv-based workspace init script for Kubernetes that sets up kubectl context, environment variables, and tooling per project directory."
-date: 2021-11-11
-weight: 20211111
+date: 2019-03-01
+weight: 20190301
 tags: ["kubernetes", "direnv", "shell", "k8s", "devops", "tooling"]
 showDate: true
 showReadingTime: false

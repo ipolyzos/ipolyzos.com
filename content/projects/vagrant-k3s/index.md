@@ -5,8 +5,8 @@ permalink: "vagrantk3s"
 title: vagrant-k3s
 description: "Single-node k3s lightweight Kubernetes cluster provisioner using Vagrant for rapid local development on any platform."
 icon: vagrant-k3s
-date: 2019-03-19
-weight: 20190319
+date: 2019-03-05
+weight: 20190305
 tags: [kubernetes, single, k3s, ubuntu, virtual, local, development]
 showDate: true
 showReadingTime: true

@@ -2,8 +2,8 @@
 layout: single
 title: proc-mcp
 description: "stdio MCP server for read-only Unix process inspection via ps and optional pstree."
-date: 2025-03-29
-weight: 20250329
+date: 2026-04-01
+weight: 20260401
 tags: ["go", "mcp", "processes", "unix", "golang"]
 private: false
 showDate: true

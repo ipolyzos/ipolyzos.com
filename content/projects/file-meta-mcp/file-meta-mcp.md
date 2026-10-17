@@ -2,8 +2,8 @@
 layout: single
 title: file-meta-mcp
 description: "Read-only MCP server for file metadata, disk usage, filesystem usage, and SHA-256 hashing via stdio transport."
-date: 2025-04-02
-weight: 20250402
+date: 2026-04-05
+weight: 20260405
 tags: ["go", "mcp", "metadata", "filesystem", "golang"]
 private: false
 showDate: true

@@ -4,8 +4,8 @@ github_url: "https://github.com/ipolyzos/mongodb-atlas-broker"
 permalink: "mongodbatlasbroker"
 title: mongodb-atlas-broker
 icon: mongodb-atlas-broker
-date: 2017-06-17
-weight: 20170617
+date: 2017-07-19
+weight: 20170719
 description: "Cloud Foundry service broker for provisioning and managing MongoDB Atlas clusters as on-demand platform services."
 tags: [mongodb, atlas, cloudfoundry, database, broker]
 ---

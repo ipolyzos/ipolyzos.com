@@ -2,8 +2,8 @@
 layout: single
 title: json-query-mcp
 description: "stdio MCP server wrapping jq in a safe, structured, read-only way for AI agent JSON querying."
-date: 2025-04-05
-weight: 20250405
+date: 2026-03-29
+weight: 20260329
 tags: ["go", "mcp", "jq", "golang"]
 private: false
 showDate: true
