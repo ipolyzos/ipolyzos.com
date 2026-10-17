@@ -2,8 +2,8 @@
 layout: single
 title: hephaestus
 description: "Go-based engineering workflow engine and plugin exploring test-first development, review separation, and evidence-backed quality gates."
-date: 2026-10-17
-weight: 20261017
+date: 2026-10-16
+weight: 20261016
 tags: ["go", "agents", "testing", "software-engineering"]
 private: true
 showDate: true
