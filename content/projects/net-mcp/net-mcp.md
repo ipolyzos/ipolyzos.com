@@ -2,8 +2,8 @@
 layout: single
 title: net-mcp
 description: "Read-only MCP server exposing structured, deterministic views of host network state via ss and lsof parsing."
-date: 2025-03-31
-weight: 20250331
+date: 2026-04-03
+weight: 20260403
 tags: ["go", "mcp", "networking", "lsof", "golang"]
 private: false
 showDate: true
