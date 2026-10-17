@@ -5,8 +5,8 @@ permalink: "elephantsqlbroker"
 title: elephantsql-broker
 description: "Cloud Foundry service broker for provisioning and managing ElephantSQL-hosted PostgreSQL databases as on-demand platform services."
 icon: elephantsql-broker
-date: 2017-06-01
-weight: 20170601
+date: 2017-09-10
+weight: 20170910
 tags: [postgresql, cloudfoundry, broker, database, service]
 showDate: true
 showReadingTime: true
