@@ -2,8 +2,8 @@
 layout: single
 title: metis-gateway
 description: "Experimental Go-based LLM API gateway with API-key authentication, provider routing, and streaming chat responses."
-date: 2026-10-17
-weight: 20261017
+date: 2026-10-12
+weight: 20261012
 tags: ["go", "llm", "gateway", "api"]
 private: true
 showDate: true
