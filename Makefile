@@ -1,6 +1,9 @@
 .POSIX:
+
 .DEFAULT_GOAL := help
+
 DESTDIR=public
+
 ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 # See <https://gist.github.com/klmr/575726c7e05d8780505a> for explanation.
@@ -12,7 +15,7 @@ help:
 ## Run Hugo server
 server: build
 	@echo "* Run Hugo server"
-	hugo server -D 
+	hugo server -D
 
 .PHONY: build
 ## Build content
@@ -24,9 +27,4 @@ build: clean
 ## Clean workspace
 clean:
 	@echo "* Cleaning old build"
-	cd $(DESTDIR) && rm -rf *
-
-.PHONY: update-theme
-## Update the Cogno Theme
-update-theme: 
-	@hugo mod get -u
+	rm -rf $(DESTDIR)
