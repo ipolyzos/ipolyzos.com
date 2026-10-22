@@ -31,7 +31,7 @@ This is a [Hugo](https://gohugo.io/) static site using a custom local theme, `th
 - `_index.md` — homepage intro
 - `about/index.md` — about page (TOML front matter: stats, skills, industries, motivations; `layout = "simple"`)
 - `projects/<name>/<name>.md` — one file per project (newer ones use `index.md`)
-- `notes/index.md` — links to the Cloudflare-hosted notes sites (judgment.ipolyzos.com, architecture.ipolyzos.com)
+- `writing/index.md` — links to the Cloudflare-hosted notes sites (judgment.ipolyzos.com, architecture.ipolyzos.com); `/notes/` is kept as an alias
 - `publications/index.md` — publications, defined as `[[publication]]` entries in front matter
 
 **Project front matter conventions:**
