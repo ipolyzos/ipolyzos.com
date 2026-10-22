@@ -7,15 +7,13 @@ languageName           = "English"
 isoCode                = "en"
 
 enableRobotsTXT = true
-[pagination]
-  pagerSize = 15
 summaryLength   = 0
 buildDrafts     = false
 buildFuture     = false
 buildExpired    = false
 
+[pagination]
+  pagerSize = 15
+
 [outputs]
   home = ["HTML", "RSS"]
-
-[markup.goldmark.renderer]
-  unsafe = true
