@@ -15,7 +15,7 @@
     </p>
     {{- end -}}
     {{- with .Params.entry -}}
-    <div class="cards">
+    <div class="cards cards--wide">
       {{- range . -}}
       <a class="card card--external{{ if .featured }} card--featured{{ end }}"
          href="{{ .url }}" target="_blank" rel="noopener noreferrer"
