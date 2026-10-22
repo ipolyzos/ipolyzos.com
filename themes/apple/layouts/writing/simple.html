@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="section section--alt">
+  <div class="section__wrap">
+    <h1 class="section__title">{{ .Title }}</h1>
+    {{- with .Content -}}
+    <div class="prose writing-intro">{{ . }}</div>
+    {{- end -}}
+    {{- with .Params.disclaimer -}}
+    <p class="section__disclaimer">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      {{ . }}
+    </p>
+    {{- end -}}
+    {{- with .Params.entry -}}
+    <div class="cards cards--wide">
+      {{- range . -}}
+      <a class="card card--external{{ if .featured }} card--featured{{ end }}"
+         href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+         aria-label="{{ .title }} (opens in a new tab)">
+        {{- with .label -}}<p class="card__label">{{ . }}</p>{{- end -}}
+        <h3 class="card__title">{{ .title }}</h3>
+        {{- with .description -}}<p class="card__desc">{{ . }}</p>{{- end -}}
+        {{- with .tags -}}
+        <div class="card__tags">
+          {{- range . -}}<span class="tag">{{ . }}</span>{{- end -}}
+        </div>
+        {{- end -}}
+        <p class="card__host">
+          {{- (urls.Parse .url).Host -}}
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7"/><path d="M8 7h9v9"/>
+          </svg>
+        </p>
+      </a>
+      {{- end -}}
+    </div>
+    {{- end -}}
+  </div>
+</section>
+{{ end }}
