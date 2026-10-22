@@ -1,10 +1,12 @@
 ---
-title: "Notes"
-description: "Personal engineering notes: how technical judgment changes with scope, and a companion handbook on modern systems architecture on AWS."
+title: "Writing"
+aliases:
+  - /notes/
+description: "Long-form writing: how technical judgment changes with scope, and a companion handbook on modern systems architecture on AWS."
 layout: "simple"
 sharingLinks: false
 ---
-Long-form notes I keep as living documents, published as separate sites.
+Long-form writing I keep as living documents, published as separate sites.
 
 ## [Judgment at Scale](https://judgment.ipolyzos.com)
 
