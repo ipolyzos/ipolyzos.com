@@ -11,8 +11,8 @@ name = "Projects"
 pageRef = "projects"
 weight = 30
 [[main]]
-name = "Notes"
-pageRef = "notes"
+name = "Writing"
+pageRef = "writing"
 weight = 35
 [[main]]
 name = "Publications"
