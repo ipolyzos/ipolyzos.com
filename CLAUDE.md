@@ -48,7 +48,7 @@ showDate: true
 showReadingTime: false
 ```
 
-**Deployment**: GitHub Actions (`.github/workflows/hugo.yaml`) builds on push to `main` and deploys to GitHub Pages. `static/CNAME` carries the custom domain (`ipolyzos.com`); `public/` is gitignored (built in CI).
+**Deployment**: GitHub Actions (`.github/workflows/hugo.yaml`) builds on push to `main` and deploys to GitHub Pages. `static/CNAME` carries the custom domain (`ipolyzos.com`); `public/` is gitignored (built in CI). Pull requests to `main` run `.github/workflows/pr-check.yaml`, which does a production build with `--panicOnWarning` so broken builds are caught before merge.
 
 ## Updating personal info
 
