@@ -2,11 +2,17 @@
 title: "Writing"
 aliases:
   - /notes/
-description: "Long-form writing: how technical judgment changes with scope, and a companion handbook on modern systems architecture on AWS."
+description: "A technology radar of what I would bet on now, long-form writing on how technical judgment changes with scope, and a companion handbook on modern systems architecture on AWS."
 layout: "simple"
 sharingLinks: false
 disclaimer: "These are personal notes. The views expressed are my own and do not necessarily represent those of my current or past employers."
 entry:
+  - title: "Technology Radar"
+    url: "https://radar.ipolyzos.com"
+    label: "Current positions"
+    featured: true
+    description: "What I would bet on right now across software engineering, data streaming, integration, cloud, platform, security and AI tooling. Each technology sits in Adopt, Trial, Assess or Hold, with a history of what moved it and why, published as editions every six months."
+    tags: ["java", "streaming", "platform", "ai tooling"]
   - title: "Judgment at Scale"
     url: "https://judgment.ipolyzos.com"
     label: "Main notes"
