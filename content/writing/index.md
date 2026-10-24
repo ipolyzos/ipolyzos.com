@@ -22,6 +22,7 @@ entry:
   - title: "Modern Systems Architecture on AWS"
     url: "https://architecture.ipolyzos.com"
     label: "Companion handbook"
+    featured: true
     description: "AWS as the implementation lens, not the subject. A structured reference for learning, deciding, reviewing and applying architecture. A reference, not original research."
     tags: ["aws", "architecture", "reliability"]
 ---
